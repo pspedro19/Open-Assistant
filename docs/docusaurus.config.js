@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Open Assistant",
+  title: "SplendosGPT",
   tagline: "Build the assistant of the future!",
   url: "https://LAION-AI.github.io",
   trailingSlash: false,
