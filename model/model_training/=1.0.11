@@ -1,0 +1,19 @@
+Collecting fastlangid
+  Using cached fastlangid-1.0.11-py2.py3-none-any.whl (1.2 MB)
+Collecting fasttext (from fastlangid)
+  Downloading fasttext-0.9.2.tar.gz (68 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 kB 2.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pybind11>=2.2 (from fasttext->fastlangid)
+  Using cached pybind11-2.10.4-py3-none-any.whl (222 kB)
+Requirement already satisfied: setuptools>=0.7.0 in /home/pspedro/miniconda3/lib/python3.10/site-packages (from fasttext->fastlangid) (65.6.3)
+Requirement already satisfied: numpy in /home/pspedro/miniconda3/lib/python3.10/site-packages (from fasttext->fastlangid) (1.24.3)
+Building wheels for collected packages: fasttext
+  Building wheel for fasttext (setup.py): started
+  Building wheel for fasttext (setup.py): finished with status 'done'
+  Created wheel for fasttext: filename=fasttext-0.9.2-cp310-cp310-linux_x86_64.whl size=309988 sha256=1c173cfe3ecadcd520ff54380532133d62a00e47f3674b87710c855f18549dfe
+  Stored in directory: /home/pspedro/.cache/pip/wheels/a5/13/75/f811c84a8ab36eedbaef977a6a58a98990e8e0f1967f98f394
+Successfully built fasttext
+Installing collected packages: pybind11, fasttext, fastlangid
+Successfully installed fastlangid-1.0.11 fasttext-0.9.2 pybind11-2.10.4

@@ -10,7 +10,7 @@ app = typer.Typer()
 
 
 @app.command()
-def main(backend_url: str = "http://127.0.0.1:8000", model_config_name="distilgpt2", username="test1"):
+def main(backend_url: str = "http://64.226.76.14:8000", model_config_name="distilgpt2", username="test1"):
     """Simple REPL client."""
     while True:
         try:
