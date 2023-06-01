@@ -340,8 +340,27 @@ services:
       - NETDATA_CLAIM_URL=https://app.netdata.cloud
     profiles: ["observability"]
 
+    https-portal:
+      image: steveltn/https-portal:1
+      restart: always
+      container_name: https-portal
+      profiles: ["ci"]
+      ports:
+        - '80:80'
+        - '443:443'
+      environment:
+        DOMAINS: 'platform.splendos.org -> http://web:3000'
+        STAGE: 'production' # Don't use production until staging works
+        CLIENT_MAX_BODY_SIZE:  5M
+      volumes:
+        - https-portal-data:/var/lib/https-portal
+        - /data/https-portal/vhosts:/var/www/vhosts
+      depends_on:
+        - web
 volumes:
   prom_data:
   netdataconfig:
   netdatalib:
   netdatacache:
+  https-portal-data: # Recommended, to avoid re-signing when upgrading HTTPS-PORTAL
+

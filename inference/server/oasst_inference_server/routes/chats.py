@@ -12,7 +12,7 @@ from oasst_inference_server.user_chat_repository import UserChatRepository
 from oasst_shared.schemas import inference
 from sse_starlette.sse import EventSourceResponse
 
-router = fastapi.APIRouter(
+srouter = fastapi.APIRouter(
     prefix="/chats",
     tags=["chats"],
 )
